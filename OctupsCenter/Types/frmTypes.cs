@@ -15,6 +15,18 @@ namespace OctupsCenter.Types
         public frmTypes()
         {
             InitializeComponent();
+            
+              var typeList = new List<TripType>();
+            typeList.Add(new TripType() { TypeId = 1, TypeName = "Test" });
+            typeList.Add(new TripType() { TypeId = 2, TypeName = "Test1" });
+            typeList.Add(new TripType() { TypeId = 3, TypeName = "Test2" });
+            typeList.Add(new TripType() { TypeId = 4, TypeName = "Test3" });
+            typeList.Add(new TripType() { TypeId = 5, TypeName = "Test3ee" });
+            typeList.Add(new TripType() { TypeId = 6, TypeName = "Test3e1" });
+            typeList.Add(new TripType() { TypeId = 7, TypeName = "Test3e" });
+            typeList.Add(new TripType() { TypeId = 8, TypeName = "Test3w" });
+            typeList.Add(new TripType() { TypeId = 9, TypeName = "Test3q" });
+            typeList.Add(new TripType() { TypeId = 10, TypeName = "Test11" });
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -28,5 +40,10 @@ namespace OctupsCenter.Types
             this.DialogResult = DialogResult.Cancel;
             this.Close();
         }
+    }
+    public class TripType
+    {
+        public int TypeId { set; get; }
+        public string TypeName { set; get; }
     }
 }
